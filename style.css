@@ -4,15 +4,19 @@
     font-family: "Inter", sans-serif;
 }
 
-section {
-    display: flex;
-}
-
 main {
     width: 80%;
 }
 
-/* Sidebar */
+hr {
+    border: 1px solid #c1c1c1;
+}
+
+h4 {
+    font-weight: 500;
+}
+
+/* --------------- Sidebar ---------------*/
 
 aside {
     width: 20%;
@@ -79,16 +83,12 @@ aside {
     border-radius: 4px;
 }
 
-.contact h4 {
-    font-weight: 500;
-}
-
 .contact p {
     font-size: 0.75rem;
     color: #8f8f8f;
 }
 
-.contact img {
+.foto-perfil {
     max-width: 48px;
     border-radius: 100%;
 }
@@ -104,7 +104,87 @@ aside {
 .online {
     background-color: #00d50b;
 }
+
 .offline {
     background-color: #d9534f;
 }
 
+/* ---------------  Main chat  ---------------  */
+
+/* Header chat */
+
+.chat-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.contact-header {
+    gap: 12px;
+}
+
+.contact-header div p {
+    font-size: 0.8rem;
+}
+
+/* Botonera */
+
+.chat-actions {
+    display: flex;
+    gap: 12px;
+}
+
+.chat-actions button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 40px;
+    border: 2px solid transparent;
+    background-color: white;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.chat-actions button:nth-child(1) {
+    border-color: #6c757d;
+    color: #6c757d;
+}
+.chat-actions button:nth-child(1):hover {
+    background-color: #6c757d;
+    color: #EFEFEF;
+}
+
+.chat-actions button:nth-child(2) {
+    border-color: #0d6efd;
+    color: #0d6efd;
+}
+.chat-actions button:nth-child(2):hover {
+    background-color: #0d6efd;
+    color: #EFEFEF;
+}
+
+.chat-actions button:nth-child(3) {
+    border-color: #18A3B9;
+    color: #18A3B9;
+}
+.chat-actions button:nth-child(3):hover {
+    background-color: #18A3B9;
+    color: #EFEFEF;
+}
+
+.chat-actions button:nth-child(4) {
+    border-color: #ffc107;
+        color: #ffc107;
+}
+.chat-actions button:nth-child(4):hover {
+    background-color: #ffc107;
+    color: #EFEFEF;
+}
+
+/* --------------- útiles --------------- */
+
+.flex {
+    display: flex;
+}
