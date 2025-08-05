@@ -16,6 +16,11 @@ h4 {
     font-weight: 500;
 }
 
+.principal {
+    display: flex;
+    height: 100vh;
+}
+
 /* --------------- Sidebar ---------------*/
 
 .sidebar {
@@ -24,10 +29,11 @@ h4 {
     flex-direction: column;
     justify-content: flex-start;
     align-items: stretch;
-    margin: 20px;
+    padding: 20px;
 }
 
 /* barra de búsqueda en chat */
+
 .search-box {
     display: flex;
     align-items: center;
@@ -115,7 +121,7 @@ h4 {
     width: 80%;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    justify-content: space-between;
 }
 
 /* Header chat */
@@ -128,6 +134,7 @@ h4 {
 
 
 .contact-header {
+    display: flex;
     gap: 16px;
 }
 
@@ -208,11 +215,9 @@ h4 {
 
 .chat-messages {
     padding: 20px;
-}
-
-.chat-messages div {
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
 }
 
 .sent {
@@ -247,14 +252,12 @@ h4 {
 /* barra inferior de texto */
 
 .chat-footer {
-    width: 100%;
-    margin: 20px;
-    margin-top: auto;
+    padding: 20px;
+    align-content: flex-end;
 }
 
 .text-box {
     display: flex;
-    height: 2rem;
     border: 1px solid #cccccc;
     border-radius: 5px;
     width: 100%;
@@ -287,6 +290,3 @@ h4 {
 
 /* --------------- útiles --------------- */
 
-.flex {
-    display: flex;
-}
