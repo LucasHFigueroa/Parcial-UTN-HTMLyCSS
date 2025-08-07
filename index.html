@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Chat UI</title>
+<title>Chat UI - Lucas Figueroa</title>
 <!-- CSS -->
 <link rel="stylesheet" href="style.css">
 <!-- google font -->
@@ -15,6 +15,7 @@ rel="stylesheet">
 <script src="https://kit.fontawesome.com/d052c1dbfd.js" crossorigin="anonymous"></script>
 <!-- font awesome iconos -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 </head>
 
 <body>
@@ -26,49 +27,49 @@ rel="stylesheet">
             </div>
             <ul class="contact-list">
                 <li class="contact">
-                    <img src="avatar.jpeg" alt="imagen de perfil" class="foto-perfil">
+                    <img src="./img/avatar1.png" alt="imagen de perfil" class="foto-perfil">
                     <div>
                         <h4>Vincent Porter</h4>
                         <p><span class="dot offline"></span>left 7 mins ago</p>
                     </div>
                 </li>
                 <li class="contact">
-                    <img src="avatar.jpeg" alt="imagen de perfil" class="foto-perfil">
+                    <img src="./img/avatar2.png" alt="imagen de perfil" class="foto-perfil">
                     <div>
                         <h4>Vincent Porter</h4>
                         <p><span class="dot offline"></span>left 7 mins ago</p>
                     </div>
                 </li>
                 <li class="contact">
-                    <img src="avatar.jpeg" alt="imagen de perfil" class="foto-perfil">
+                    <img src="./img/avatar3.png" alt="imagen de perfil" class="foto-perfil">
                     <div>
                         <h4>Vincent Porter</h4>
                         <p><span class="dot offline"></span>left 7 mins ago</p>
                     </div>
                 </li>
                 <li class="contact">
-                    <img src="avatar.jpeg" alt="imagen de perfil" class="foto-perfil">
+                    <img src="./img/avatar4.png" alt="imagen de perfil" class="foto-perfil">
                     <div>
                         <h4>Vincent Porter</h4>
                         <p><span class="dot offline"></span>left 7 mins ago</p>
                     </div>
                 </li>
                 <li class="contact">
-                    <img src="avatar.jpeg" alt="imagen de perfil" class="foto-perfil">
+                    <img src="./img/avatar5.png" alt="imagen de perfil" class="foto-perfil">
                     <div>
                         <h4>Vincent Porter</h4>
                         <p><span class="dot offline"></span>left 7 mins ago</p>
                     </div>
                 </li>
                 <li class="contact" >
-                    <img src="avatar.jpeg" alt="imagen de perfil" class="foto-perfil">
+                    <img src="./img/avatar6.png" alt="imagen de perfil" class="foto-perfil">
                     <div>
                         <h4>Vincent Porter</h4>
-                        <p><span class=" m5 dot online"></span>left 7 mins ago</p>
+                        <p><span class="dot online"></span>left 7 mins ago</p>
                     </div>
                 </li>
                 <li class="contact" >
-                    <img src="avatar.jpeg" alt="imagen de perfil" class="foto-perfil">
+                    <img src="./img/avatar7.png" alt="imagen de perfil" class="foto-perfil">
                     <div>
                         <h4>Vincent Porter</h4>
                         <p><span class="dot offline"></span>left 7 mins ago</p>
@@ -80,7 +81,7 @@ rel="stylesheet">
         <main class="chat">
             <header class="chat-header">
                 <div class="contact-header">
-                    <img src="avatar.jpeg" alt="imagen de perfil" class="foto-perfil">
+                    <img src="./img/avatar1.png" alt="imagen de perfil" class="foto-perfil">
                     <div>
                         <h4>Aiden Chavez</h4>
                         <p>Last seen: 2 hours ago</p>
@@ -92,15 +93,27 @@ rel="stylesheet">
                     <button title="editar configuración"><i class="fa fa-cogs" aria-hidden="true"></i></button>
                     <button title="Ayuda"><i class="fa fa-question" aria-hidden="true"></i></button>
                 </div>
+                <div class="chat-actions-mobile">
+                    <button title="Menú"><i class="fa fa-bars" aria-hidden="true"></i></button>
+                </div>
             </header>
             <hr>
             <section class="chat-messages">
-                    <p class="timestamp-sent">10:10 AM, Today <img src="avatar.jpeg" alt="foto perfil" class="foto-perfil"></p>
-                    <p class="message-sent">Hi Aiden, how are you? How is the project coming along?</p>
-                    <p class="timestamp-received">10:10 AM, Today</p>
-                    <p class="message-received">Are we meeting today?</p>
-                    <p class="timestamp-received">10:12 AM, Today</p>
-                    <p class="message-received">Project has already been finished and I have results to show you.</p>
+                <div class="message-sent">
+                    <p>Hi Aiden, how are you? How is the project coming along?</p>
+                    <p class="timestamp">10:10</p>
+                    <i class="fa fa-check-circle-o seen" aria-hidden="true"></i>
+                </div>
+                <div class="message-received">
+                    <p>Are we meeting today?</p>
+                    <p class="timestamp">10:11</p>
+                    <i class="fa fa-check-circle-o seen" aria-hidden="true"></i>
+                </div>
+                <div class="message-received">
+                    <p>Project has already been finished and I have results to show you.</p>
+                    <p class="timestamp">10:12</p>
+                    <i class="fa fa-circle-o-notch no-seen" aria-hidden="true"></i>
+                </div>
             </section>
             <footer class="chat-footer">
                 <div class="text-box">
