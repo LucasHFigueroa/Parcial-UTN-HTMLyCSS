@@ -359,6 +359,7 @@ h4 {
         justify-content: center;
         width: 44px;
         height: 40px;
+        border: 1px solid transparent;
         background-color: transparent;
         font-size: 24px;
         color: rgb(4, 147, 183)
@@ -372,6 +373,7 @@ h4 {
 
     .chat-footer {
         align-items: flex-end;
-        padding: 20px 12px;
+        padding: 20px 20px;
+        margin-bottom: 20px;
     }
 }
